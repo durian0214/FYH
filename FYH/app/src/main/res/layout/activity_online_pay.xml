@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_online_pay"
+        android:text="@string/TO_PAY"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_online_pay"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_online_pay_time"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_online_pay_apartment_address_lable"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="@string/APARTMENT_ADDRESS"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_online_pay_apartment_address"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/tv_online_pay_apartment_address_lable"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_online_pay_money_lable"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/SHOULD_PAY_MONEY"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_online_pay_money"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/tv_online_pay_money_lable"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

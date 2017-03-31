@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_search_main"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="15dp" />
+
+    <TextView
+        android:id="@+id/text_search_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_search_main"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/img_search_main" />
+
+    <TextView
+        android:id="@+id/text_search_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_search_name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/img_search_main" />
+
+    <TextView
+        android:id="@+id/text_search_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_search_area"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/img_search_main"
+        android:text="标签" />
+
+    <TextView
+        android:id="@+id/text_search_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/text_search_area"
+        android:layout_marginEnd="15dp" />
+</RelativeLayout>

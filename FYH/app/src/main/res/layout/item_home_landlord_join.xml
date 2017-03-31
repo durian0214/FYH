@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/myBackground"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_landlord_join"
+        android:layout_width="match_parent"
+        android:text="@string/LANDLORD_JOIN"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/tvWhite"
+        android:background="@drawable/shape_button_theme"
+        android:layout_height="48dp" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="myTheme">#dab866</color>
+    <color name="myTitle">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="myBackground">#f6f6f6</color>
+    <color name="bgWhite">#ffffff</color>
+    <color name="bgBlack">#000000</color>
+    <color name="tvWhite">#ffffff</color>
+    <color name="tvBlack">#000000</color>
+    <color name="tvTWhite">#dfdfdf</color>
+    <color name="line">#e2e2e2</color>
+    <color name="nexs">#00000000</color>
+    <!--搜索-->
+    <color name="color_search_tab">#666</color>
+    <color name="color_search_tab_select">#ff0</color>
+    <color name="color_search_item_lite">#666</color>
+    <color name="color_search_item_dark">#444</color>
+    <color name="color_search_item_border">#999</color>
+    <color name="color_search_item_border_select">#ff3</color>
+    <color name="color_search_positive">#adcadc</color>
+    <color name="color_search_positive_select">#ffdaff</color>
+    <color name="color_search_negative">#adc000</color>
+    <color name="color_search_negative_select">#ffc010</color>
+    <color name="color_search_shade">#a000</color>
+</resources>

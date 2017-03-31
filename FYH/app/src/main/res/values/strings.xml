@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">房营行</string>
+    <!-- Fragment name-->
+
+    <string name="HOME">首页</string>
+    <string name="APARTMENT">主题公寓</string>
+    <string name="SET">我</string>
+    <string name="RECOMMEND_APARTMENT">推荐公寓</string>
+    <string name="RECOMMEND_HOUSE">推荐房源</string>
+    <string name="LABLE_JOINT_RENT">合租</string>
+    <string name="LABLE_ENTIRE_TENANCY">整租</string>
+    <string name="LABLE_FIREND">行友圈</string>
+    <string name="LABLE_APARTMENT">主題公寓</string>
+    <string name="MORE">更多</string>
+    <string name="LANDLORD_JOIN">房东加盟</string>
+    <!-- 登录 -->
+    <string name="LABLE_LOGIN_ACCOUNT">账号:</string>
+    <string name="LABLE_LOGIN_PASSWORD">密码:</string>
+    <string name="LOGIN_REGISTER">注册</string>
+    <string name="FORGET_PASSWORD">忘记密码</string>
+    <string name="LOGIN">登录</string>
+    <!-- 注册 -->
+    <string name="HINT_ACCOUNT">请输入账号</string>
+    <string name="HINT_PHONE">请输入手机号</string>
+    <string name="HINT_PASSWORD">请输入密码</string>
+    <string name="HINT_CODE">请输入验证码</string>
+    <string name="GET_CODE">获取验证码</string>
+    <string name="REGISTER">注册</string>
+    <string name="REGISSTER_LOGIN">已有账号,我要登录</string>
+    <!-- 忘记密码-->
+    <string name="HINT_AFFIRM_PASSWORD">再次确认密码</string>
+    <string name="COMPLETE_ADD_LOGIN">完成并提交</string>
+    <!-- 我 -->
+    <string name="RESERVATION">我的预约</string>
+    <string name="NO_PAYMENT">待支付</string>
+    <string name="TO_EVALUATE">待评价</string>
+    <string name="CONTRACT">我的合同</string>
+    <string name="MY_KEY">我的钥匙</string>
+    <string name="MY_MESSAGE">我的消息</string>
+    <string name="MY_COLLECT">我的收藏</string>
+    <string name="ADD_HOUSE">添加房源</string>
+    <!-- 个人信息 -->
+    <string name="PERSONAL_DETAILS">个人信息</string>
+    <string name="HEAD_PORTRIT">头像</string>
+    <string name="GENDER">性别</string>
+    <string name="REAL_NAME_AUTHENTICATION">实名认证</string>
+    <string name="ACCOUNT_INFORMATION">账户信息</string>
+
+    <string name="ABOUT_US">关于我们</string>
+    <string name="OUT_LOGIN">退出登录</string>
+    <string name="MAN">男</string>
+    <string name="WOMAN">女</string>
+    <!-- 公寓详情 -->
+    <string name="APARTMENT_DETAIL">房营行公寓</string>
+    <string name="CHECK_IN">已入住</string>
+    <string name="UN_CHECK_IN">未入住</string>
+    <string name="CHECK_ROOM">查看房间</string>
+    <string name="CHECK_IN_TIME">入住时间:</string>
+    <string name="RESERVATION_LOOK_ROOM">预约看房</string>
+    <string name="PAY">立即支付</string>
+    <!-- 房源列表 -->
+    <string name="ROOM_TYPE">类型</string>
+    <string name="ROOM_AREA">区域</string>
+    <string name="ROOM_HOUSE_TYPE">居室</string>
+    <string name="ROOM_RENT_SORT">租金</string>
+    <!-- 预约看房 -->
+    <string name="NAME">姓名</string>
+    <string name="PHONE">电话</string>
+    <string name="REMARK">备注</string>
+    <string name="SUBMIT">提交</string>
+    <!-- 实名认证 -->
+    <string name="AUTHENTICATION">认证</string>
+    <string name="IDENTITY_CARD">身份证号</string>
+    <!-- 修改密码 -->
+    <string name="MODIFY_PASSWORD">修改密码</string>
+    <string name="OLD_PASSWORD">旧密码</string>
+    <string name="NEW_PASSWORD">新密码</string>
+    <string name="RE_NEW_PASSWORD">确认密码</string>
+    <!-- 租期信息 -->
+    <string name="START_TIME">开始时间</string>
+    <string name="TENANCY_TERM">租期</string>
+    <string name="END_TIME">结束时间</string>
+    <string name="PAY_WAY">付款方式</string>
+    <string name="NEXT">下一步</string>
+    <!-- 合同 -->
+    <string name="CONTRACT_CONSENT">我同意上述合同条款</string>
+    <string name="CASH_DEPOSIT">保证金</string>
+    <string name="SERVICE_CHARGE">服务费</string>
+    <string name="SHOULD_PAY">应付</string>
+    <string name="SHOULD_PAY_MONEY">应付金额</string>
+    <string name="APARTMENT_ADDRESS">公寓地址</string>
+    <string name="CONTRACT_DATE">合同日期</string>
+    <string name="AFFIRM">确认</string>
+    <string name="TO_PAY">去支付</string>
+
+    <!-- 个人中心合同信息 -->
+    <string name="CONTRACT_NO">合同编号</string>
+    <string name="CONTRACT_ADRESS">公寓地址</string>
+    <string name="CONTRACT_DURING">合同日期</string>
+    <string name="CONTRACT_RENT">房屋租金</string>
+    <string name="CONTRACT_DEPOSIT">保证金</string>
+    <string name="CONTRACT_PAY_TYPE">付款方式</string>
+    <!-- 账号信息 -->
+    <string name="ACCOUNT">账号</string>
+    <string name="MOBILE_NUB">手机号</string>
+    <!-- 发布房源 -->
+    <string name="RELEASE">发布</string>
+    <string name="EDIT">编辑</string>
+    <string name="RELEASE_HOUSE_TITLE">发布房源</string>
+    <string name="RELEASE_HOUSE_LIST_TITLE">发布房源列表</string>
+    <!--搜索-->
+    <string name="str_search_style">租住类型</string>
+    <string name="str_search_location">位置</string>
+    <string name="str_search_rental">租金</string>
+    <string name="str_search_screen">筛选</string>
+    <string name="str_search_style_long">公寓长租</string>
+    <string name="str_search_style_short">公寓短租</string>
+    <string name="str_search_style_whole">整租</string>
+    <string name="str_search_style_together">合租</string>
+    <string name="str_search_ok">确定</string>
+    <string name="str_search_reset">重置</string>
+    <string name="str_search_towards">朝向</string>
+    <string name="str_search_towards_south">南</string>
+    <string name="str_search_towards_north">北</string>
+    <string name="str_search_towards_east">东</string>
+    <string name="str_search_towards_west">西</string>
+    <string name="str_search_towards_southnorth">南北</string>
+    <string name="str_search_feature">房屋特色</string>
+    <string name="str_search_feature_first">首次出租</string>
+    <string name="str_search_feature_wc">独立卫生间</string>
+    <string name="str_search_feature_balcony">独立阳台</string>
+    <string name="str_search_feature_heat">集体供暖</string>
+    <string name="str_search_feature_heatonly">独立供暖</string>
+    <string name="str_search_feature_heatcenter">中央供暖</string>
+    <string name="str_search_feature_autolock">智能锁</string>
+    <string name="str_search_feature_elevator">有电梯</string>
+    <string name="str_search_around">房源周边</string>
+    <string name="str_search_around_subway">离地铁近</string>
+    <string name="str_search_around_new">新小区</string>
+    <string name="str_search_around_school">离学校近</string>
+    <string name="str_search_around_green">绿化率高</string>
+    <string name="str_search_contract">租约类型</string>
+    <string name="str_search_contract_year">年租</string>
+    <string name="str_search_contract_mouth">月租</string>
+    <string name="str_search_status">房屋状态</string>
+    <string name="str_search_status_immediately">可立即入住</string>
+    <string name="str_search_status_book">可预定</string>
+    <string name="str_search_status_switch">自如客转租</string>
+
+
+</resources>

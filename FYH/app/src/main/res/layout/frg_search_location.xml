@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_search_location"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#fff" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_search_location2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_toRightOf="@id/recycler_search_location"
+        android:background="#fff"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_search_location3"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_toRightOf="@id/recycler_search_location2"
+        android:background="#fff"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/layout_search_location_shade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recycler_search_location"
+        android:background="@color/color_search_shade" />
+
+</RelativeLayout>

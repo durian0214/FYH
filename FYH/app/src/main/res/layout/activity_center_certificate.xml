@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/reality_name_id"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:text="真实姓名:"
+
+            />
+        <TextView
+            android:id="@+id/reality_name"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/reality_name_id"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+    <TextView
+        android:id="@+id/certificates_num_id"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="身份证号:"
+        />
+        <TextView
+            android:id="@+id/certificates_num"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/certificates_num_id"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_margin="32dp"
+        android:text="去认证"
+        android:layout_height="wrap_content" />
+</LinearLayout>

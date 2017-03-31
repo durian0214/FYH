@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_rxvolley"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="test rxvolley" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_rxvolley2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/btn_rxvolley"
+        android:text="test rxvolley get" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_rxvolley3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/btn_rxvolley2"
+        android:text="test rxvolley okHttp" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_rxvolley4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/btn_rxvolley3"
+        android:text="test rxvolley retrofit" />
+
+    <TextView
+        android:id="@+id/text_rxvolley"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/btn_rxvolley4" />
+
+    <TextView
+        android:id="@+id/text_rxvolley2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/text_rxvolley" />
+
+    <TextView
+        android:id="@+id/text_rxvolley3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/text_rxvolley2" />
+    <TextView
+        android:id="@+id/text_rxvolley4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/text_rxvolley3" />
+
+</RelativeLayout>

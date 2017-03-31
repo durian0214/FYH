@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <include
+        android:id="@+id/layout_search_screen2"
+        layout="@layout/view_search_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_search_item_button"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/recycler_search_rental"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" />
+
+    <View
+        android:id="@+id/line_search_screen"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/layout_search_screen2"
+        android:background="@color/line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line_search_screen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_search_towards_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/str_search_towards"
+                    android:textColor="@color/color_search_item_dark"
+                    android:textSize="@dimen/ts_search_item_big" />
+
+                <LinearLayout
+                    android:id="@+id/layout_search_style1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_towards_south"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_towards_south"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_towards_north"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_towards_north"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_towards_east"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_towards_east"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_towards_west"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_towards_west"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_search_style1"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_towards_southnorth"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_towards_southnorth"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_search_feature_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/str_search_feature"
+                    android:textColor="@color/color_search_item_dark"
+                    android:textSize="@dimen/ts_search_item_big" />
+
+                <LinearLayout
+                    android:id="@+id/layout_search_feature1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_feature_first"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_feature_first"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_feature_wc"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_feature_wc"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_feature_balcony"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_feature_balcony"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_feature_heattoget"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_feature_heat"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_search_feature1"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_feature_heatonly"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_feature_heatonly"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_feature_heatcenter"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_feature_heatcenter"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_feature_autolock"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_feature_autolock"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_feature_elevator"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_feature_elevator"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_search_around_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/str_search_around"
+                    android:textColor="@color/color_search_item_dark"
+                    android:textSize="@dimen/ts_search_item_big" />
+
+                <LinearLayout
+                    android:id="@+id/layout_search_around1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_around_subway"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_around_subway"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_around_new"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_around_new"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_around_school"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_around_school"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_around_green"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_around_green"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_search_contract_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/str_search_contract"
+                    android:textColor="@color/color_search_item_dark"
+                    android:textSize="@dimen/ts_search_item_big" />
+
+                <LinearLayout
+                    android:id="@+id/layout_search_contract1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_contract_year"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_contract_year"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:id="@+id/space_search_contract"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_contract_mouth"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_contract_mouth"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/text_search_status_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/str_search_status"
+                    android:textColor="@color/color_search_item_dark"
+                    android:textSize="@dimen/ts_search_item_big" />
+
+                <LinearLayout
+                    android:id="@+id/layout_search_status1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_status_immediately"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_status_immediately"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:id="@+id/space_search_status1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_status_book"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_status_book"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                    <View
+                        android:id="@+id/space_search_status2"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/text_search_status_switch"
+                        android:layout_width="@dimen/width_search_item_normal"
+                        android:layout_height="@dimen/height_search_item_normal"
+                        android:background="@drawable/bg_search_item_normal"
+                        android:gravity="center"
+                        android:text="@string/str_search_status_switch"
+                        android:textColor="@color/color_search_item_lite"
+                        android:textSize="@dimen/ts_search_item_normal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

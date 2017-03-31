@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_apartment_room_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_apartment_room_detail_reservation_look_room"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button_theme"
+            android:text="@string/RESERVATION_LOOK_ROOM"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_apartment_room_detail_pay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/PAY"
+            android:background="@drawable/shape_button_theme"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_apartment_room_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_apartment_room_detail"
+        android:layout_gravity="center"/>
+</RelativeLayout>

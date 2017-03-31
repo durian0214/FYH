@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="56dp"
+    android:paddingRight="56dp"
+    android:background="@drawable/login_bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_logo"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="8dp"
+    android:background="@color/bgBlack"
+    android:id="@+id/rl_register_account"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/img_register_account"
+        android:scaleType="fitXY"
+        android:background="@drawable/icon_account"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edt_register_account"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/img_register_account"
+        android:layout_centerVertical="true"
+        android:hint="@string/HINT_ACCOUNT"
+        android:textColor="@color/tvWhite"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:background="@null"
+        android:textColorHint="@color/tvTWhite"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@color/bgBlack"
+        android:id="@+id/rl_register_phone"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/img_register_phone"
+            android:scaleType="fitXY"
+            android:background="@drawable/icon_phone"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_register_phone"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/img_register_phone"
+            android:inputType="number"
+            android:layout_centerVertical="true"
+            android:hint="@string/HINT_PHONE"
+            android:textColor="@color/tvWhite"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@null"
+            android:textColorHint="@color/tvTWhite"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/bgBlack"
+        android:layout_marginTop="8dp"
+        android:id="@+id/rl_register_code"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_register_getcode"
+            android:layout_width="wrap_content"
+            android:text="@string/GET_CODE"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button_theme"
+            android:layout_centerVertical="true"
+            android:textColor="@color/tvWhite"
+            android:layout_alignParentRight="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/btn_register_getcode"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/img_register_code"
+                android:scaleType="fitXY"
+                android:background="@drawable/icon_code"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edt_register_code"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@id/img_register_code"
+                android:layout_centerVertical="true"
+                android:hint="@string/HINT_CODE"
+                android:inputType="number"
+                android:textColor="@color/tvWhite"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:background="@null"
+                android:textColorHint="@color/tvTWhite"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@color/bgBlack"
+        android:id="@+id/rl_register_password"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/img_register_password"
+            android:scaleType="fitXY"
+            android:background="@drawable/icon_password"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_register_password"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/img_register_password"
+            android:inputType="textPassword"
+            android:layout_centerVertical="true"
+            android:hint="@string/HINT_PASSWORD"
+            android:textColor="@color/tvWhite"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@null"
+            android:textColorHint="@color/tvTWhite"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:text="@string/REGISTER"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/tvWhite"
+        android:background="@drawable/shape_button_theme_login"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_register_login"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/REGISSTER_LOGIN"
+            android:textColor="@color/tvTWhite"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

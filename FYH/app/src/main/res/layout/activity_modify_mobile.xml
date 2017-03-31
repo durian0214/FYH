@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/edt_modify_mobile_password"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+            android:hint="@string/HINT_PASSWORD"
+        android:lines="1"/>
+
+    <EditText
+        android:id="@+id/edt_modify_mobile_phone"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+        android:inputType="phone"
+        android:hint="@string/HINT_PHONE"
+        android:lines="1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_modify_mobile_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GET_CODE"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/tvWhite"
+            android:background="@drawable/shape_button_theme"
+            android:padding="8dp"
+            android:layout_centerVertical="true"/>
+        <EditText
+            android:id="@+id/edt_modify_mobile_code"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/btn_modify_mobile_get_code"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="phone"
+            android:hint="@string/HINT_CODE"
+            android:lines="1"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_modify_mobile_affirm"
+        android:layout_width="match_parent"
+        android:text="@string/AFFIRM"
+        android:background="@drawable/shape_button_theme"
+        android:padding="8dp"
+        android:textColor="@color/tvWhite"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

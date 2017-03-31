@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item_home_apartment_child">
+        <RelativeLayout
+            android:id="@+id/rl_item_apartment_img"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_item_home_apartment"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="10dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"
+            />
+                <TextView
+                    android:id="@+id/tv_item_home_apartment_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/tvWhite"
+                    android:textSize="16sp"
+                    android:background="@color/black"
+                    android:text="hello" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_item_home_apartment_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/rl_item_apartment_img"
+            android:text=""/>
+        <TextView
+            android:id="@+id/tv_item_home_apartment_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@id/tv_item_home_apartment_area"
+            android:text=""/>
+
+
+</RelativeLayout>

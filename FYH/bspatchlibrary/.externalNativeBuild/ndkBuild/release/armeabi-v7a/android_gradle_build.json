@@ -1,0 +1,45 @@
+{
+  "buildFiles": [
+    "D:\\works\\app\\FYH\\bspatchlibrary\\src\\main\\jni\\Android.mk"
+  ],
+  "cleanCommands": [
+    "D:\\androidStudio\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\works\\app\\FYH\\bspatchlibrary\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dD:/works/app/FYH/bspatchlibrary/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\works\\app\\FYH\\bspatchlibrary\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "libraries": {
+    "hello-jni-release-armeabi-v7a": {
+      "buildCommand": "D:\\androidStudio\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\works\\app\\FYH\\bspatchlibrary\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dD:/works/app/FYH/bspatchlibrary/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\works\\app\\FYH\\bspatchlibrary\\build\\intermediates\\ndkBuild\\release\\lib D:/works/app/FYH/bspatchlibrary/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libhello-jni.so",
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "hello-jni",
+      "files": [
+        {
+          "src": "D:\\works\\app\\FYH\\bspatchlibrary\\src\\main\\jni\\com_example_asus_myndktest2_NDKUtils.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidStudio/sdk/ndk-bundle/build//../toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fno-integrated-as\" \"-g\" \"-target\" \"armv7-none-linux-androideabi\" \"-march\u003darmv7-a\" \"-mfloat-abi\u003dsoftfp\" \"-mfpu\u003dvfpv3-d16\" \"-mthumb\" \"-Os\" \"-DNDEBUG\" \"-ID:/works/app/FYH/bspatchlibrary/src/main/jni\" \"-DANDROID\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"D:/androidStudio/sdk/ndk-bundle/build//../platforms/android-14/arch-arm\""
+        }
+      ],
+      "output": "D:\\works\\app\\FYH\\bspatchlibrary\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libhello-jni.so"
+    },
+    "bspatch-release-armeabi-v7a": {
+      "buildCommand": "D:\\androidStudio\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\works\\app\\FYH\\bspatchlibrary\\src\\main\\jni\\Android.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-14 NDK_OUT\u003dD:/works/app/FYH/bspatchlibrary/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\works\\app\\FYH\\bspatchlibrary\\build\\intermediates\\ndkBuild\\release\\lib D:/works/app/FYH/bspatchlibrary/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libbspatch.so",
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "bspatch",
+      "files": [
+        {
+          "src": "D:\\works\\app\\FYH\\bspatchlibrary\\src\\main\\jni\\com_example_asus_myndktest2_PatchUtils.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidStudio/sdk/ndk-bundle/build//../toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fno-integrated-as\" \"-g\" \"-target\" \"armv7-none-linux-androideabi\" \"-march\u003darmv7-a\" \"-mfloat-abi\u003dsoftfp\" \"-mfpu\u003dvfpv3-d16\" \"-mthumb\" \"-Os\" \"-DNDEBUG\" \"-ID:/works/app/FYH/bspatchlibrary/src/main/jni\" \"-DANDROID\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"D:/androidStudio/sdk/ndk-bundle/build//../platforms/android-14/arch-arm\""
+        }
+      ],
+      "output": "D:\\works\\app\\FYH\\bspatchlibrary\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libbspatch.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi-v7a": {
+      "cCompilerExecutable": "D:\\androidStudio\\sdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

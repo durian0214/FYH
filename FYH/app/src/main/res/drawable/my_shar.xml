@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 灰色阴影 -->
+    <item
+        android:left="1dp"
+        android:right="1dp">
+        <shape>
+
+            <gradient
+                android:endColor="#00000000"
+                android:centerColor="#000000"
+                android:startColor="#00000000"/>
+            <corners
+                android:topLeftRadius="8dp"
+                android:topRightRadius="8dp"
+                />
+        </shape>
+    </item>
+    <!-- 白色前景 -->
+    <item
+        android:left="2dp"
+        android:right="2dp">
+        <shape>
+            <solid android:color="#ffffff" />
+            <corners
+                android:topLeftRadius="8dp"
+                android:topRightRadius="8dp"/>
+        </shape>
+    </item>
+</layer-list>

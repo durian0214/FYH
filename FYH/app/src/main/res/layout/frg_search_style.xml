@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_search_style3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/layout_search_style1"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_search_style_long"
+                android:layout_width="@dimen/width_search_item_normal"
+                android:layout_height="@dimen/height_search_item_normal"
+                android:background="@drawable/bg_search_item_normal"
+                android:gravity="center"
+                android:text="@string/str_search_style_long"
+                android:textColor="@color/color_search_item_lite"
+                android:textSize="@dimen/ts_search_item_normal" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_search_style_short"
+                android:layout_width="@dimen/width_search_item_normal"
+                android:layout_height="@dimen/height_search_item_normal"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_search_item_normal"
+                android:gravity="center"
+                android:text="@string/str_search_style_short"
+                android:textColor="@color/color_search_item_lite"
+                android:textSize="@dimen/ts_search_item_normal" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_search_style_whole"
+                android:layout_width="@dimen/width_search_item_normal"
+                android:layout_height="@dimen/height_search_item_normal"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_search_item_normal"
+                android:gravity="center"
+                android:text="@string/str_search_style_whole"
+                android:textColor="@color/color_search_item_lite"
+                android:textSize="@dimen/ts_search_item_normal" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/text_search_style_together"
+                android:layout_width="@dimen/width_search_item_normal"
+                android:layout_height="@dimen/height_search_item_normal"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_search_item_normal"
+                android:gravity="center"
+                android:text="@string/str_search_style_together"
+                android:textColor="@color/color_search_item_lite"
+                android:textSize="@dimen/ts_search_item_normal" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/layout_search_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/layout_search_style1"
+            android:layout_marginTop="32dp"
+            android:background="@color/line" />
+
+        <include
+            android:id="@+id/layout_search_style2"
+            layout="@layout/view_search_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_search_item_button"
+            android:layout_below="@id/layout_search_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />
+
+        <View
+            android:id="@+id/layout_search_line1"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/layout_search_style2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_search_style_shade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_search_style3"
+        android:background="@color/color_search_shade" />
+</RelativeLayout>

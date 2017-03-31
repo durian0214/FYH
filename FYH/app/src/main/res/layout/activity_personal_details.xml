@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_personal_details_head_portrit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/HEAD_PORTRIT" />
+
+            <ImageView
+                android:id="@+id/img_personal_details_icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/set_back" />
+
+            <ImageView
+                android:id="@+id/img_personal_details_icon"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/img_personal_details_icon_back"
+                android:src="@drawable/icon_user" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/GENDER"
+                android:layout_alignParentLeft="true"/>
+            <Switch
+                android:id="@+id/switch_personal_details_gender"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textOn="@string/MAN"
+                android:textOff="@string/WOMAN"
+                android:checked="true"
+                android:showText="true"
+                android:thumb="@drawable/thumb_sex"
+                android:switchTextAppearance="@style/SwitchColor"
+                android:track="@drawable/track_sex"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_personal_details_real_name_authentication"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/REAL_NAME_AUTHENTICATION"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/set_back"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_personal_details_account_information"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/ACCOUNT_INFORMATION"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/set_back"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_personal_details_modify_password"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/MODIFY_PASSWORD"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/set_back"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_personal_details_about_us"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/ABOUT_US"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/set_back"/>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_personal_details_out_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tvWhite"
+            android:background="@drawable/shape_button_theme"
+            android:text="@string/OUT_LOGIN"
+            android:gravity="center"
+            android:padding="8dp"/>
+    </LinearLayout>
+</ScrollView>
